@@ -86,6 +86,9 @@ def tensor_weights(rep1,rep2):
                     add_to_dict(final_weights, w, sign)
     return final_weights
 
+if __name__ == '__main__':
+    rep1 = Spn_rep(degree = 2, rank= 2, tensor_type='symmetric')
+    rep2 = Spn_rep(degree = 2, rank= 2, tensor_type='symmetric')
+    print(tensor_weights(rep1,rep2))
 
 
-#print(in_weyl([5,1,0]))
